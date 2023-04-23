@@ -13,6 +13,7 @@ export const load = async ({ locals }) => {
 			username
 		}
 	});
+
 	const session = await auth.createSession(user.userId);
 	locals.auth.setSession(session);
 }
